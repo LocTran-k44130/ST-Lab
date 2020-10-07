@@ -16,41 +16,50 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/TC001 - Success</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>81f8f995-df34-4cbb-af0e-b5d187e21728</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/DF_Login/DataFromExcel</testDataId>
+      </testDataLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>81f8f995-df34-4cbb-af0e-b5d187e21728</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Username</value>
          <variableId>399b227c-93b4-4b4a-b560-8011a212fc91</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>81f8f995-df34-4cbb-af0e-b5d187e21728</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Password</value>
          <variableId>da544539-0eab-4a9b-94de-3df106e98f67</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>51112c36-86f7-4b81-985a-3f52e47f8fc1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/TC002 - Wrong Password</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>88c4e36c-735b-4d26-a894-cf51da17e264</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/TC003 - Wrong Username</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>ca3e79b8-ed46-4c22-bed5-ef18f0a8c94a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/TC004 - Fail</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>2cad186c-9960-419b-8890-a4cb3c031157</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/TC005 - Empty field</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

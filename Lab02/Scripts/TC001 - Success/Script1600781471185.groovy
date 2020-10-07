@@ -26,10 +26,15 @@ WebUI.verifyElementText(findTestObject('Object Repository/Page_CURA Healthcare S
 
 WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/a_Make Appointment'))
 
-WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Username_username'), Username)
+for(def row=1; row<= findTestData("DF_Login/DataFromExcel").getRowNumbers(); row++)
+{
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Password_password'), Password)
+//WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Username_username'), Username)
+WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Username_username'), findTestData("DF_Login/DataFromExcel").getValue(1,row))
 
+//WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Username_username'), Password)
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Password_password'), findTestData("DF_Login/DataFromExcel").getValue(2,row))
+}
 WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/button_Login'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/Page_CURA Healthcare Service/h2_Make Appointment'), 'Make Appointment')
